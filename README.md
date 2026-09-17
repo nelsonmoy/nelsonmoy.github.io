@@ -1,5 +1,3 @@
-<div align="center">
-
 # Nelson Manuel
 
 🚀 Backend Developer | Creador de Contenido Educativo | Proyectos Tech
@@ -25,5 +23,3 @@
 [![Estudiando con Nelson](https://img.shields.io/badge/Educación-Estudiando_con_Nelson-4285F4?style=for-the-badge&logo=facebook)](https://www.facebook.com/profile.php?id=61591926324694)
 
 [![TiketiaTap](https://img.shields.io/badge/Emprendimiento-TiketiaTap-833AB4?style=for-the-badge&logo=instagram)](https://www.instagram.com/tiketiatap/)
-
-</div>
