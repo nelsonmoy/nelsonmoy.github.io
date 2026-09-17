@@ -3,95 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nelson Manuel | Enlaces</title>
+  <title>Nelson Manuel | Hub de Enlaces</title>
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     }
+
     body {
-      background: #0d1117;
-      color: #ffffff;
+      background-color: #0b0f19;
+      color: #e2e8f0;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 20px;
+      padding: 24px 16px;
     }
+
     .container {
       width: 100%;
       max-width: 480px;
       text-align: center;
     }
-    .profile-img {
-      width: 96px;
-      height: 96px;
+
+    /* Cabecera / Perfil */
+    .profile-avatar {
+      width: 104px;
+      height: 104px;
       border-radius: 50%;
+      border: 2px solid #38bdf8;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.25);
       margin-bottom: 16px;
-      border: 3px solid #30363d;
     }
+
     h1 {
       font-size: 1.5rem;
-      margin-bottom: 8px;
+      font-weight: 700;
+      color: #f8fafc;
+      letter-spacing: -0.5px;
     }
-    p {
-      color: #8b949e;
-      font-size: 0.95rem;
+
+    .tagline {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.88rem;
+      color: #38bdf8;
+      margin-top: 6px;
       margin-bottom: 24px;
     }
-    .section-title {
-      font-size: 0.85rem;
+
+    /* Secciones */
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1.5px;
-      color: #58a6ff;
-      margin: 20px 0 10px;
+      color: #64748b;
       text-align: left;
+      margin: 24px 0 12px 4px;
     }
-    .link-btn {
-      display: block;
+
+    /* Botones */
+    .link-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       width: 100%;
-      padding: 14px 20px;
+      padding: 14px 18px;
       margin-bottom: 12px;
-      background: #161b22;
-      color: #f0f6fc;
-      text-decoration: none;
+      background: #161e2e;
+      border: 1px solid #243044;
       border-radius: 12px;
-      border: 1px solid #30363d;
-      font-weight: 600;
-      transition: all 0.2s ease;
+      color: #f1f5f9;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: all 0.2s ease-in-out;
     }
-    .link-btn:hover {
-      background: #21262d;
-      border-color: #58a6ff;
+
+    .link-card:hover {
+      background: #1e293b;
+      border-color: #38bdf8;
       transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
+
+    .link-content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    /* Badges de Categoría */
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .badge-tech { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+    .badge-edu { background: rgba(251, 146, 60, 0.15); color: #fb923c; }
+    .badge-biz { background: rgba(244, 63, 94, 0.15); color: #f43f5e; }
+    .badge-social { background: rgba(148, 163, 184, 0.15); color: #94a3b8; }
+
     footer {
-      margin-top: 30px;
+      margin-top: 36px;
       font-size: 0.8rem;
-      color: #484f58;
+      color: #475569;
     }
   </style>
 </head>
 <body>
+
   <div class="container">
-    <img class="profile-img" src="https://github.com/nelsonmoy.png" alt="Nelson Manuel">
-    <h1>Nelson Manuel</h1>
-    <p>🚀 Backend Developer | Creador de Contenido Educativo | Proyectos Tech</p>
+    <!-- Perfil -->
+    <img class="profile-avatar" src="https://github.com/nelsonmoy.png" alt="Nelson Manuel">
+    <h1>Nelson Manuel Ordaz</h1>
+    <p class="tagline">&gt; Backend Dev | Maker | EduContent</p>
 
-    <div class="section-title">🌐 Redes & Blog</div>
-    <a href="https://nelsonkewebs.blogspot.com/" target="_blank" class="link-btn">📝 Blog Tech (nelsonkewebs)</a>
-    <a href="https://github.com/nelsonmoy" target="_blank" class="link-btn">🐙 GitHub (@nelsonmoy)</a>
-    <a href="https://x.com/nelsonkewebs" target="_blank" class="link-btn">🗪 X / Twitter (@nelsonkewebs)</a>
-    <a href="https://www.instagram.com/nelsonmoy/" target="_blank" class="link-btn">📸 Instagram (@nelsonmoy)</a>
-    <a href="https://www.facebook.com/nelsonoy" target="_blank" class="link-btn">📘 Facebook Personas</a>
+    <!-- Proyectos & Emprendimientos -->
+    <div class="section-label">Proyectos & Emprendimientos</div>
+    
+    <a href="https://www.facebook.com/profile.php?id=61591926324694" target="_blank" class="link-card">
+      <div class="link-content">
+        <span>🎓 Estudiando con Nelson</span>
+      </div>
+      <span class="badge badge-edu">Educación</span>
+    </a>
 
-    <div class="section-title">💡 Proyectos & Emprendimientos</div>
-    <a href="https://www.facebook.com/profile.php?id=61591926324694" target="_blank" class="link-btn">🎓 Estudiando con Nelson</a>
-    <a href="https://www.instagram.com/tiketiatap/" target="_blank" class="link-btn">🏷️ TiketiaTap (Etiquetas y Diseños)</a>
+    <a href="https://www.instagram.com/tiketiatap/" target="_blank" class="link-card">
+      <div class="link-content">
+        <span>🏷️ TiketiaTap</span>
+      </div>
+      <span class="badge badge-biz">Etiquetas & Diseño</span>
+    </a>
 
-    <footer>© Nelson Manuel — nelsonmoy.github.io</footer>
+    <!-- Desarrollo & Tech -->
+    <div class="section-label">Desarrollo & Contenido Tech</div>
+
+    <a href="https://nelsonkewebs.blogspot.com/" target="_blank" class="link-card">
+      <div class="link-content">
+        <span>📝 Blog nelsonkewebs</span>
+      </div>
+      <span class="badge badge-tech">Linux & Docker</span>
+    </a>
+
+    <a href="https://github.com/nelsonmoy" target="_blank" class="link-card">
+      <div class="link-content">
+        <span>💻 GitHub (@nelsonmoy)</span>
+      </div>
+      <span class="badge badge-tech">Código</span>
+    </a>
+
+    <a href="https://x.com/nelsonkewebs" target="_blank" class="link-card">
+      <div class="link-content">
+        <span>🗪 X / Twitter</span>
+      </div>
+      <span class="badge badge-tech">Tech Posts</span>
+    </a>
+
+    <!-- Redes Personales -->
+    <div class="section-label">Contacto & Redes</div>
+
+    <a href="https://www.instagram.com/nelsonmoy/" target="_blank" class="link-card">
+      <div class="link-content">
+        <span>📸 Instagram Personal</span>
+      </div>
+      <span class="badge badge-social">@nelsonmoy</span>
+    </a>
+
+    <a href="https://www.facebook.com/nelsonoy" target="_blank" class="link-card">
+      <div class="link-content">
+        <span>📘 Facebook Personal</span>
+      </div>
+      <span class="badge badge-social">Perfil</span>
+    </a>
+
+    <footer>
+      © Nelson Manuel — Tapachula, Chiapas
+    </footer>
   </div>
+
 </body>
 </html>
